@@ -2,7 +2,7 @@
 
 <img width="100" height="100" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/100/external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" alt="external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1"/>
 
-<h2>Daily ClamAV system scanning script (daily-clamdscan) v1.01</h2>
+<h2>Daily ClamAV system scanning script (daily-clamdscan) v1.03</h2>
 Baked for Debian-based distros...
 
 <h3>Overview:</h3> 
