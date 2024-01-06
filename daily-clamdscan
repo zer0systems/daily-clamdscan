@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Daily ClamAV system scan (daily-clamdscan)
+# Daily ClamAV system scan (daily-clamdscan) v1.0
 
 # OVERVIEW: There exists three (3) available basic return codes for ClamAV. Return code 0 = success, return code 1 = infection(s), and return code 2 = errors.
 # Depending on the execution of ClamAV and the order in which it encounters any infections and/or errors the final return code will always prevail. Therefore,
