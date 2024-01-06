@@ -11,4 +11,4 @@ There currently exists three (3) available basic return codes for ClamAV. Return
 This script aims to simply determine if a non-zero (1 and/or 2) return code is present after execution and notify (email) an administrator for further action, otherwise silently terminate. All of the needed variable definitions can be updated occordingly as applicable. The alert email notification includes the ClamAV version, scan target(s), scan size, and a log attachment. You can additionally control the log rotation interval.
 
 <h3>Deployment</h3>
-Coming soon...
+<i>Coming soon...</i>
