@@ -1,6 +1,6 @@
 # daily-clamdscan
 
-![skull-hacking-time-4k-rh](https://github.com/zer0systems/daily-clamdscan/assets/64301838/1f14fab5-eed9-40c6-a0c5-ca06b2eb984b)
+<img width="100" height="100" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/100/external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" alt="external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1"/>
 
 <h2>Daily ClamAV system scanning script (daily-clamdscan) v1.01</h2>
 Baked for Debian-based distros...
