@@ -40,4 +40,4 @@
 
 <p>Clone the repo:</p>
 
-<pre><code class="language-css">git clone</code></pre>
+<pre><code class="language-css">git clone https://github.com/zer0systems/daily-clamdscan.git</code></pre>
