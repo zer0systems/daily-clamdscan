@@ -29,3 +29,16 @@
 
 <h3>Deployment:</h3>
 
+<h4>Requirements:</h4>
+
+<ul>
+  <li>The clamav package installed w/ a basic configuration in place.</li>
+  <li>The s-nail package installed (required for email attachment support).</li>
+</ul>
+
+<h4>Setup:</h4>
+
+<ol>
+  <li>Clone the repo: git clone </li>
+  <li></li>
+</ol>
