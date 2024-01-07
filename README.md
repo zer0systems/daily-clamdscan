@@ -38,7 +38,6 @@
 
 <h4>Setup:</h4>
 
-<ol>
-  <li>Clone the repo: git clone </li>
-  <li></li>
-</ol>
+<p>Clone the repo:</p>
+
+<pre><code class="language-css">git clone</code></pre>
