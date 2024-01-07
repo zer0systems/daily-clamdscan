@@ -38,6 +38,16 @@
 
 <h4>Setup:</h4>
 
-<p>Clone the repo:</p>
+<p>1. Clone the repo to the desired directory:</p>
 
 <pre><code class="language-css">git clone https://github.com/zer0systems/daily-clamdscan.git</code></pre>
+
+<p>2. Change into the repo download directory and assign the script the proper permissions (enable execution):</p>
+
+<pre><code class="language-css">chmod 0775 daily-clamdscan</code></pre>
+
+<p>3. Symlink the script into you /etc/cron.daily directory:</p>
+
+<pre><code class="language-css">ln -s daily-clamdscan /etc/cron.daily/clamav</code></pre>
+
+<p>4. Customize the script via the variable definitions.</p>
