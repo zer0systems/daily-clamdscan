@@ -1,6 +1,6 @@
 # daily-clamdscan
 
-<img width="100" height="100" src="https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/100/external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png" alt="external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1"/>
+![Virus Particle.](https://img.icons8.com/external-vitaliy-gorbachev-lineal-color-vitaly-gorbachev/100/external-virus-virus-transmission-vitaliy-gorbachev-lineal-color-vitaly-gorbachev-1.png)
 
 ## Daily ClamAV system scanning script (daily-clamdscan) v1.04
 
@@ -63,4 +63,4 @@ This script aims to simply determine if a non-zero (1 and/or 2) return code is p
 - Freshclam database update prior to scanning.
 
 > [!NOTE]
-> Feel completely free to suggest any future features you would like to see implemented.
+> Feel completely free to suggest any future features you would like to see implemented. 😎
