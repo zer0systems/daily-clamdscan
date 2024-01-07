@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Daily ClamAV system scan (daily-clamdscan) v1.03
+# Daily ClamAV system scan (daily-clamdscan) v1.04
 
 # Script variable definitions
 clamav_ver=$( clamd --version );
@@ -18,7 +18,7 @@ logfile="/var/log/clamav/clamdscan-$(date +'%Y-%m-%d').log";
 log_rotate="+30";
 
 # Execute the scan and quarantine any infections
-/usr/bin/clamdscan --multiscan --fdpass --move=/root/.quarantine --log="$logfile" "$scan_dir";
+/usr/bin/clamdscan --multiscan --allmatch --fdpass --move=/root/.quarantine --log="$logfile" "$scan_dir";
 
 # Capture the scan return code
 retcode="$?";
