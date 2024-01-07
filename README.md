@@ -50,4 +50,12 @@
 
 <pre><code class="language-css">ln -s daily-clamdscan /etc/cron.daily/clamav</code></pre>
 
-<p>4. Customize the script via the variable definitions.</p>
+<p>4. Customize the script via the variable definitions. Elements such as the directory(s) to be scanned (SCAN_DIR), monitoring recipient (MONITORING_EMAIL), log rotation interval (LOG_ROTATE), and more can all be configured as applicable.</p>
+
+<h3>Future:</h3>
+
+<h4>Possible upcoming features:</h4>
+
+<ul>
+  <li>Freshclam database update prior to scanning.</li>
+</ul>
