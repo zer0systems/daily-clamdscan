@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Daily ClamAV system scan (daily-clamdscan) v1.04
+# Daily ClamAV system scan (daily-clamdscan) v1.05
 
 # Script variable definitions
 clamav_ver=$( clamd --version );
@@ -17,7 +17,13 @@ monitoring_email="monitoring@example.com";
 logfile="/var/log/clamav/clamdscan-$(date +'%Y-%m-%d').log";
 log_rotate="+30";
 
-# Execute the scan and quarantine any infections
+# Execute the scan and quarantine any infections 
+# Additional parameters: 
+# 1. --multiscan enables clamd to utilize multithreading, allowing parallel processing
+# 2. --allmatch clamd to continue scanning within a file even after a threat has been detected
+# 3. --fdpass passes the file descriptor permissions to clamd to avoid perrions errors during scanning 
+# 4. --move simply moves any infected file(s) to the designated quarantine folder
+# 5. --log specifies the path to the log file 
 /usr/bin/clamdscan --multiscan --allmatch --fdpass --move=/root/.quarantine --log="$logfile" "$scan_dir";
 
 # Capture the scan return code
@@ -28,6 +34,7 @@ find /var/log/clamav -type f -mtime "$log_rotate" -delete;
 
 # Evaluate the return code status, alert or terminate
 if [ "$retcode" -ne "0" ]; then
+  # Send an alert enail, including a log attachment detailing the issue(s)  
   echo -e "$email_message" | s-nail -s "$email_subject" -a "$logfile" "$monitoring_email";
   exit "$retcode"
 else
