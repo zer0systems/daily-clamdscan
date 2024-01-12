@@ -13,7 +13,7 @@ done
 
 email_subject="ClamAV: Infections and/or Errors Encountered";
 email_message="Version: "$clamav_ver"\nStarting a recursive scan of the "$s" directory. The size of the directory is: "$dirsize".\n\nInfections and/or errors have been encountered during the scan. Please review the log attached below for further details:\n";
-monitoring_email="monitoring@zer0systems.com";
+monitoring_email="monitoring@example.com";
 logfile="/var/log/clamav/clamdscan-$(date +'%Y-%m-%d').log";
 log_rotate="+30";
 
