@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Daily ClamAV system scan (daily-clamdscan) v1.06
+# Daily ClamAV system scan (daily-clamdscan) v1.07
 
 # Script variable definitions
 clamav_ver=$( clamd --version );
@@ -25,7 +25,7 @@ log_rotate="+30";
 # 4. --move simply moves any infected file(s) to the designated quarantine folder
 # 5. --log specifies the path to the log file
 # 6. > /dev/null is used to dismiss any output to supress the run-parts report
-/usr/bin/clamdscan --multiscan --allmatch --fdpass --move=/root/.quarantine --log="$logfile" "$scan_dir";
+/usr/bin/clamdscan --multiscan --allmatch --fdpass --move=/root/.quarantine --log="$logfile" "$scan_dir" > /dev/null;
 
 # Capture the scan return code
 retcode="$?";
