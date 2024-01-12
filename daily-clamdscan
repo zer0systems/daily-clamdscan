@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 # Daily ClamAV system scan (daily-clamdscan) v1.07
