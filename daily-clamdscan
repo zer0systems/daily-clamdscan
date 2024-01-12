@@ -24,7 +24,8 @@ log_rotate="+30";
 # 3. --fdpass passes the file descriptor permissions to clamd to avoid perrions errors during scanning 
 # 4. --move simply moves any infected file(s) to the designated quarantine folder
 # 5. --log specifies the path to the log file 
-/usr/bin/clamdscan --multiscan --allmatch --fdpass --move=/root/.quarantine --log="$logfile" "$scan_dir";
+# 6. > /dev/null is used to dismiss any output to supress the run-parts report
+/usr/bin/clamdscan --multiscan --allmatch --fdpass --move=/root/.quarantine --log="$logfile" "$scan_dir" > /dev/null;
 
 # Capture the scan return code
 retcode="$?";
