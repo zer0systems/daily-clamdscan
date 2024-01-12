@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Daily ClamAV system scan (daily-clamdscan) v1.05
+# Daily ClamAV system scan (daily-clamdscan) v1.06
 
 # Script variable definitions
 clamav_ver=$( clamd --version );
@@ -16,6 +16,11 @@ email_message="Version: "$clamav_ver"\nStarting a recursive scan of the "$s" dir
 monitoring_email="monitoring@example.com";
 logfile="/var/log/clamav/clamdscan-$(date +'%Y-%m-%d').log";
 log_rotate="+30";
+
+# Update ClamAV databases
+systemctl stop clamav-freshclam
+freshclam
+systemctl start clamav-freshclam
 
 # Execute the scan and quarantine any infections 
 # Additional parameters: 
